@@ -175,7 +175,7 @@ p.large{
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/imgs/lawBackground.webp');
+    background-image: url('./imgs/lawBackground.webp');
     background-size: cover;
     background-position: right -123px top;
     background-repeat: no-repeat;
@@ -213,7 +213,7 @@ p.large{
     border-radius: 22px;
     overflow: hidden;
     background-color: #262626;
-    background-image: url('/imgs/backgorundAbout.webp');
+    background-image: url('./imgs/backgorundAbout.webp');
     background-size: 82vw;
     background-position: right bottom;
     background-repeat: no-repeat;
