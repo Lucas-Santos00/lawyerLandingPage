@@ -1,6 +1,7 @@
 window.addEventListener("scroll", (function() {
     window.scrollY > 0 ? document.body.style.backgroundColor = "#0D0D0D" : document.body.style.backgroundColor = "#1A1A1A"
 }));
+
 const slides = document.getElementById("slides"),
     pagination = document.getElementById("pagination"),
     testimonials = document.querySelectorAll(".testimonial");
@@ -49,13 +50,16 @@ function updateDots() {
         e.classList.toggle("active", t === currentPage)
     }))
 }
+
 window.addEventListener("resize", updateCarousel), window.addEventListener("DOMContentLoaded", updateCarousel);
 const FAQList = document.getElementsByClassName("FAQItem");
+
 Array.from(FAQList).forEach((e => {
     e.addEventListener("click", (() => {
         toggleFAQ(e)
     }))
 }));
+
 const toggleFAQ = e => {
     "Opened" !== e.id ? (Array.from(FAQList).forEach((e => {
         e.id = ""
