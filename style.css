@@ -127,7 +127,7 @@ p.large{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1244px;
     margin: 0 auto;
 }
 .card-law-benefit{
@@ -470,7 +470,6 @@ header{
     position: relative;
     z-index: 1;
 }
-
 /* Media for components styles */
 @media (max-width: 568px) {
     /* ONLY USED FOR FAQ*/
@@ -487,6 +486,11 @@ header{
   #Opened p{
     font-size: 14px;
   }
+}
+@media (min-width: 499px){
+    #adjust-flex{
+        justify-content: flex-end;
+    }
 }
 @media (min-width: 768px) { /* Tablet > */
     .a-button{
@@ -610,6 +614,10 @@ header{
     .footer-container{
         padding: 28px 32px 42px 32px;
     }
+    .law-benefit-max-width-container{
+        justify-content: space-between;
+        max-width: 844px;
+    }
 }
 @media (min-width: 1280px ) { /* Large screens */
     .social-link img{
@@ -618,6 +626,9 @@ header{
     }
     .footer-container{
         padding: 48px 28px 28px 48px;
+    }
+    .law-benefit-max-width-container{
+        max-width: 1244px;
     }
 }
 
